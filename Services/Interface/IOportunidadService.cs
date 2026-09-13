@@ -11,4 +11,8 @@ public interface IOportunidadService
         int idOportunidad,
         UpdateEtapaOportunidadRequest request,
         CancellationToken cancellationToken);
+
+    Task<CreateOportunidadResult> CreateAsync(
+        CreateOportunidadRequest request,
+        CancellationToken cancellationToken);
 }

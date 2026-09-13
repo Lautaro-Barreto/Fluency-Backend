@@ -5,6 +5,21 @@ Accept: application/json
 
 ###
 
+### Alta de oportunidad
+POST {{FluencyAPI_HostAddress}}/Oportunidades/AltaOportunidad
+Content-Type: application/json
+
+{
+  "titulo": "Curso B1 para Acme S.A.",
+  "idUsuario": 1,
+  "idEtapa": 1,
+  "idEmpresa": 1,
+  "idServicio": 1,
+  "idOrigen": 1
+}
+
+###
+
 ### Oportunidades agrupadas por etapa (embudo comercial)
 GET {{FluencyAPI_HostAddress}}/Oportunidades/OportunidadesPorEtapa
 Accept: application/json

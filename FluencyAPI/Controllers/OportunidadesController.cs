@@ -8,6 +8,25 @@ namespace FluencyAPI.Controllers;
 [Route("[controller]")]
 public sealed class OportunidadesController(IOportunidadService oportunidadService) : ControllerBase
 {
+    /// <summary>Da de alta una nueva oportunidad.</summary>
+    [HttpPost("AltaOportunidad", Name = "AltaOportunidad")]
+    [ProducesResponseType(typeof(OportunidadResponse), StatusCodes.Status201Created)]
+    [ProducesResponseType(StatusCodes.Status400BadRequest)]
+    public async Task<ActionResult<OportunidadResponse>> AltaOportunidad(
+        [FromBody] CreateOportunidadRequest request,
+        CancellationToken cancellationToken)
+    {
+        var result = await oportunidadService.CreateAsync(request, cancellationToken);
+
+        return result.Outcome switch
+        {
+            CreateOportunidadOutcome.Success
+                => Created($"/Oportunidades/{result.Oportunidad!.Id}", result.Oportunidad),
+            CreateOportunidadOutcome.ValidationFailed => BadRequest(new { errors = result.Errors }),
+            _ => Problem()
+        };
+    }
+
     /// <summary>Devuelve todas las oportunidades agrupadas por etapa comercial (vista de embudo).</summary>
     [HttpGet("OportunidadesPorEtapa", Name = "OportunidadesPorEtapa")]
     [ProducesResponseType(typeof(IReadOnlyList<EtapaConOportunidadesResponse>), StatusCodes.Status200OK)]
