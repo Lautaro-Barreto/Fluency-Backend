@@ -1,0 +1,12 @@
+C:\Users\lauta\Desktop\TP-GADS-1\backend\Services\bin\Debug\net10.0\Services.deps.json
+C:\Users\lauta\Desktop\TP-GADS-1\backend\Services\bin\Debug\net10.0\Services.dll
+C:\Users\lauta\Desktop\TP-GADS-1\backend\Services\bin\Debug\net10.0\Services.pdb
+C:\Users\lauta\Desktop\TP-GADS-1\backend\Services\obj\Debug\net10.0\Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lauta\Desktop\TP-GADS-1\backend\Services\obj\Debug\net10.0\Services.AssemblyInfoInputs.cache
+C:\Users\lauta\Desktop\TP-GADS-1\backend\Services\obj\Debug\net10.0\Services.AssemblyInfo.cs
+C:\Users\lauta\Desktop\TP-GADS-1\backend\Services\obj\Debug\net10.0\Services.csproj.CoreCompileInputs.cache
+C:\Users\lauta\Desktop\TP-GADS-1\backend\Services\obj\Debug\net10.0\Services.dll
+C:\Users\lauta\Desktop\TP-GADS-1\backend\Services\obj\Debug\net10.0\refint\Services.dll
+C:\Users\lauta\Desktop\TP-GADS-1\backend\Services\obj\Debug\net10.0\Services.pdb
+C:\Users\lauta\Desktop\TP-GADS-1\backend\Services\obj\Debug\net10.0\ref\Services.dll
+C:\Users\lauta\Desktop\TP-GADS-1\backend\Services\obj\Debug\net10.0\Services.csproj.Up2Date
