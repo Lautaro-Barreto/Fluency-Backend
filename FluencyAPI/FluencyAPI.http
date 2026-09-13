@@ -4,3 +4,64 @@ GET {{FluencyAPI_HostAddress}}/weatherforecast/
 Accept: application/json
 
 ###
+
+### Oportunidades agrupadas por etapa (embudo comercial)
+GET {{FluencyAPI_HostAddress}}/Oportunidades/OportunidadesPorEtapa
+Accept: application/json
+
+###
+
+### Mover una oportunidad a otra etapa
+POST {{FluencyAPI_HostAddress}}/Oportunidades/UpdateEtapaOportunidad/1
+Content-Type: application/json
+
+{
+  "idNuevaEtapa": 2,
+  "idUsuario": 1,
+  "observacion": "Aprobó el examen de nivelación"
+}
+
+###
+
+### Alta de contacto
+POST {{FluencyAPI_HostAddress}}/Contacto/AltaContacto
+Content-Type: application/json
+
+{
+  "nombre": "Ana",
+  "apellido": "Gomez",
+  "correo": "ana.gomez@example.com",
+  "telefono": "1122334455"
+}
+
+###
+
+### Datos de un contacto
+GET {{FluencyAPI_HostAddress}}/Contacto/DatosContacto/1
+Accept: application/json
+
+###
+
+### Historial de etapas de las oportunidades de un contacto
+GET {{FluencyAPI_HostAddress}}/Contacto/HistorialEtapas/1
+Accept: application/json
+
+###
+
+### Alta de empresa
+POST {{FluencyAPI_HostAddress}}/Empresa/AltaEmpresa
+Content-Type: application/json
+
+{
+  "razonSocial": "Acme S.A.",
+  "cuit": "30-12345678-9",
+  "correo": "contacto@acme.com"
+}
+
+###
+
+### Datos de una empresa
+GET {{FluencyAPI_HostAddress}}/Empresa/DatosEmpresa/1
+Accept: application/json
+
+###
